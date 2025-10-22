@@ -9,8 +9,8 @@ int main()
     float c = 0;
     char ch;
 
-    printf("请按顺序输入两个整数和运算符(用逗号隔开，别用空格):");
-    scanf("%f,%f,%c", &a, &b, &ch);
+    printf("请按顺序输入两个整数和运算符(用空格隔开):");
+    scanf("%f %f %c", &a, &b, &ch);
 
     switch (ch)
     {
