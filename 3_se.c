@@ -9,7 +9,7 @@ int main()
     printf("请输入一个50以内的正整数:");
     scanf("%d", &n);
     
-    if (n <= 1 || n > 50) {
+    if (n < 1 || n > 50) {
         printf("输入无效\n");
         return 0;
     }
