@@ -3,13 +3,24 @@
 //牛运杰
 #include <stdio.h>
 
-int main()
-{   
-    float a = 0;
-    printf("请输入摄氏温度: ");
-    scanf("%f",&a);
-    float b=(a*9)/5+32;
-    printf("对应的华氏温度:%f",b);
+
+int main() 
+{   int n = 0 ;
+    printf("请输入一个50以内的正整数:");
+    scanf("%d",&n);
+    for (int i = 2 ; i < n; i++)
+    {   if(n % i == 0 )
+        {printf("密码不安全，请重新输入");
+        return 0 ;
+        }
+        else (n % i != 0);
+        {
+        printf("密钥安全，密码设置成功");
+        return 0 ;
+        }    
+    }
+    
+    
 
     return 0;
 }
